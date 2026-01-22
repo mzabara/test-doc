@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 0 var(--ui-gap-m);
+}
+
+.document-name {
+  box-sizing: border-box;
+  padding-right: var(--ui-padding-m);
+  border-right: 1px solid var(--ui-border-base);
+}
+
+.scale-actions {
+  display: flex;
+  align-items: center;
+  gap: 0 var(--ui-gap-s);
+  padding-right: var(--ui-padding-m);
+  border-right: 1px solid var(--ui-border-base);
+}
+
+.current-scale {
+  text-align: center;
+  min-width: 40px;
+}

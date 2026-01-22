@@ -88,11 +88,15 @@
               }
             ],
             "styles": [
+              "src/shared/styles/index.scss",
               "src/styles.scss"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

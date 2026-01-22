@@ -1,0 +1,8 @@
+:host {
+  position: absolute;
+  z-index: 1;
+  top: var(--ui-size-m);
+  right: var(--ui-size-m);
+  font-size: 0.8rem;
+  color: var(--ui-text-color-secondary);
+}

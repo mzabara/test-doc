@@ -1,0 +1,60 @@
+:root,
+:host {
+  // Fonts
+  --ui-font-family: "Onest";
+  --ui-font-size-s: 13px;
+  --ui-font-size-m: 15px;
+
+  // Radiuses
+  --ui-border-radius-xs: 6px;
+  --ui-border-radius-s: 8px;
+
+  // Palette
+  --ui-background-base: var(--ui-white);
+  --ui-background-secondary: var(--ui-gray);
+
+  --ui-white: #ffffff;
+
+  --ui-blue: #526ed3;
+  --ui-blue-hover: #6c86e2;
+
+  --ui-gray: #fafafa;
+  --ui-gray-hover: #efefef;
+
+  // Text colors
+  --ui-text-color-base: #1b1f3b;
+  --ui-text-color-secondary: rgba(27, 31, 59, .65);
+
+  // Border colors
+  --ui-border-base: rgba(0, 0, 0, .1);
+
+  // Shadows
+  --ui-shadow-s: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  --ui-shadow-m: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+  // Paddings
+  --ui-padding-xs: 6px;
+  --ui-padding-s: 8px;
+  --ui-padding-m: 16px;
+  --ui-padding-l: 24px;
+
+  // Gaps
+  --ui-gap-s: 8px;
+  --ui-gap-m: 16px;
+  --ui-gap-l: 24px;
+
+  // Sizes
+  --ui-size-s: 8px;
+  --ui-size-m: 16px;
+  --ui-size-l: 24px;
+  --ui-size-xl: 32px;
+  --ui-size-2xl: 40px;
+
+  // UI
+  --app-header-height: 64px;
+  --app-logo-color: var(--ui-blue);
+
+  --app-footer-height: 40px;
+
+  --app-annotation-baloon-background: #fee797;
+}

@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@use "shared/styles/index";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: var(--ui-font-family), sans-serif;
+  font-size: var(--ui-font-size-m);
+  color: var(--ui-text-color-base);
+}

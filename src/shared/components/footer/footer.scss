@@ -1,0 +1,33 @@
+:host {
+  position: fixed;
+  bottom: 0;
+  border-top: solid 1px var(--ui-border-base);
+  left: 0;
+  align-items: center;
+  display: flex;
+  gap: var(--ui-gap-m);
+  box-sizing: border-box;
+  padding-inline: var(--ui-padding-m);
+  block-size: var(--app-footer-height);
+  inline-size: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1.25rem);
+  font-size: var(--ui-font-size-s);
+  color: var(--ui-text-color-base);
+  z-index: 10;
+}
+
+.copyright {
+  color: var(--ui-text-color-secondary);
+}
+
+.tg-link {
+  color: var(--ui-blue);
+  transition: .2s;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: none;
+    color: var(--ui-blue-hover);
+  }
+}

@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  box-shadow: var(--ui-shadow-m);
+  box-sizing: border-box;
+  inline-size: auto;
+  margin-inline: auto;
+  background-color: var(--ui-background-base);
+  position: relative;
+}
+
+.page-frame {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page-canvas {
+  position: relative;
+  inline-size: 800px;
+  block-size: 1100px;
+}
+
+.page-overlay {
+  position: absolute;
+  inset: 0;
+}

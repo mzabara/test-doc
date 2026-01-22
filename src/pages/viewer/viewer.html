@@ -1,0 +1,20 @@
+@if (store.loading()) {
+  <app-loader/>
+}
+
+@if (store.document(); as document) {
+  @if (document.pages.length) {
+    @for (page of document.pages; track page.number) {
+      <app-page
+        [page]="page"
+        [scale]="zoom()"
+      />
+    }
+  } @else {
+    <app-not-found [message]="store.emptyPagesMessage()"/>
+  }
+}
+
+@if (store.errorMessage()) {
+  <app-not-found [message]="store.errorMessage()"/>
+}

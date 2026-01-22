@@ -1,0 +1,25 @@
+:host {
+  position: absolute;
+  z-index: 2;
+}
+
+.annotation-form {
+  display: flex;
+  flex-direction: column;
+  padding: var(--ui-padding-m);
+  gap: var(--ui-gap-m);
+  width: 320px;
+  background-color: var(--ui-background-base);
+  box-shadow: var(--ui-shadow-m);
+  border-radius: var(--ui-border-radius-s);
+}
+
+.header {
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 var(--ui-gap-s);
+}

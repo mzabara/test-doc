@@ -1,0 +1,9 @@
+:host {
+  background-color: var(--ui-background-secondary);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--ui-gap-m);
+  padding: calc(var(--app-header-height) + var(--ui-size-l)) 0 calc(var(--app-footer-height) + var(--ui-size-l));
+  min-height: 100vh;
+}

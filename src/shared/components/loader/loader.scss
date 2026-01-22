@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 120px;
+}
+
+.spinner {
+  inline-size: 32px;
+  block-size: 32px;
+  border-radius: 50%;
+  border: 3px solid var(--ui-border-base);
+  border-top-color: var(--ui-accent);
+  animation: spin 0.8s linear infinite;
+}
+
+.sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

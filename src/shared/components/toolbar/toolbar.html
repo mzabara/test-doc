@@ -1,0 +1,56 @@
+@if (store.document(); as document) {
+
+  @if (document.name) {
+    <div class="document-name">
+      Документ: {{ document.name }}
+    </div>
+  }
+
+  @if (document.pages.length) {
+    <div class="scale-actions">
+      Масштаб:
+
+      <button
+        type="button"
+        appButton
+        appearance="icon"
+        [disabled]="store.loading()"
+        (click)="zoomOut()"
+      >
+        -
+      </button>
+
+      <div class="current-scale">
+        {{ scale() }}
+      </div>
+
+      <button
+        type="button"
+        appButton
+        appearance="icon"
+        [disabled]="store.loading()"
+        (click)="zoomIn()"
+      >
+        +
+      </button>
+    </div>
+
+    <button
+      type="button"
+      appButton
+      appearance="primary"
+      (click)="requestAnnotation()"
+    >
+      Добавить аннотацию
+    </button>
+
+    <button
+      type="button"
+      appButton
+      [disabled]="store.loading() || !annotationStore.hasAnnotations()"
+      (click)="requestSave()"
+    >
+      Сохранить
+    </button>
+  }
+}

@@ -1,0 +1,12 @@
+{{ annotation().text }}
+
+<button
+  type="button"
+  appButton
+  appearance="icon"
+  class="remove-btn"
+  (click)="remove()"
+  (pointerdown)="$event.stopPropagation()"
+>
+  ✕
+</button>

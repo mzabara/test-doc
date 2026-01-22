@@ -1,0 +1,36 @@
+<form
+  class="annotation-form"
+  [formGroup]="form"
+  (ngSubmit)="submit()"
+>
+  <header class="header">
+    Новая аннотация
+  </header>
+
+  <textarea
+    appTextarea
+    formControlName="text"
+  >
+  </textarea>
+
+  <footer class="footer">
+    <button
+      type="submit"
+      appButton
+      appearance="primary"
+      [disabled]="form.invalid"
+      size="s"
+    >
+      Добавить
+    </button>
+
+    <button
+      type="button"
+      appButton
+      size="s"
+      (click)="cancelEdit()"
+    >
+      Отменить
+    </button>
+  </footer>
+</form>

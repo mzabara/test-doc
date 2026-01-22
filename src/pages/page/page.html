@@ -1,0 +1,42 @@
+@if (page()) {
+  <app-page-number
+    [pageNumber]="page().number"
+  />
+
+  <div
+    class="page-frame"
+    [style.width.px]="scaledWidth()"
+    [style.height.px]="scaledHeight()"
+  >
+    <div
+      class="page-canvas"
+      #canvas
+      [style.transform]="'scale(' + scale() + ')'"
+      [style.transform-origin]="'top center'"
+      (pointerdown)="handleCanvas($event, canvas)"
+    >
+    <img
+      [ngSrc]="page().imageUrl"
+      [priority]="page().number === 1"
+      [width]="baseWidth"
+      [height]="baseHeight"
+      alt="Страница {{ page().number }}"
+    />
+
+      <div class="page-overlay">
+        @if (pendingPlacement()) {
+          <app-add-new-annotation
+            [position]="pendingPlacement()!"
+            [pageNumber]="page().number"
+          />
+        }
+
+        @for (annotation of annotations(); track annotation.id) {
+          <app-added-annotation
+            [annotation]="annotation"
+          />
+        }
+      </div>
+    </div>
+  </div>
+}

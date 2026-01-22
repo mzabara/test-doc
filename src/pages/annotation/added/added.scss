@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  align-items: flex-start;
+  position: absolute;
+  background: var(--app-annotation-baloon-background);
+  font-size: var(--ui-font-size-s);
+  border: 1px solid var(--ui-border-base);
+  border-radius: var(--ui-border-radius-s);
+  box-shadow: var(--ui-shadow-m);
+  box-sizing: border-box;
+  padding: var(--ui-padding-s);
+  max-inline-size: 240px;
+  gap: var(--ui-gap-s);
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+[appButton] {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}

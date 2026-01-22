@@ -1,0 +1,21 @@
+.app-textarea {
+  appearance: none;
+  line-height: inherit;
+  text-decoration: none;
+  position: relative;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: var(--ui-padding-s);
+  font-size: var(--ui-font-size-s);
+  border-radius: var(--ui-border-radius-xs);
+  border: none;
+  outline: solid 1px var(--ui-border-base);
+  background-color: var(--ui-background-base);
+  min-height: 64px;
+  inline-size: 100%;
+  resize: vertical;
+
+  &:focus {
+    outline-color: var(--ui-blue);
+  }
+}
