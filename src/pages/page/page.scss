@@ -24,3 +24,19 @@
   position: absolute;
   inset: 0;
 }
+
+.placement-hint {
+  position: absolute;
+  inset-block-start: var(--ui-padding-m);
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  padding: var(--ui-padding-s);
+  border-radius: var(--ui-border-radius-s);
+  background: var(--ui-gray);
+  color: var(--ui-text-color-secondary);
+  box-shadow: var(--ui-shadow-s);
+  font-size: var(--ui-font-size-s);
+  text-align: center;
+  pointer-events: none;
+  line-height: 1.2rem;
+}

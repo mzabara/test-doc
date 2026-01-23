@@ -37,6 +37,10 @@ export class PageComponent {
   readonly annotations = this.annotationsService.annotations;
   readonly pendingPlacement = this.annotationsService.pendingPlacement;
 
+  readonly showPlacementHint = computed(
+    () => this.annotationStore.addAnnotationEnabled() && !this.pendingPlacement()
+  );
+
   readonly scaledWidth = computed(() => Math.round(this.baseWidth * this.scale()));
   readonly scaledHeight = computed(() => Math.round(this.baseHeight * this.scale()));
 

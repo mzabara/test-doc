@@ -24,6 +24,12 @@
     />
 
       <div class="page-overlay">
+        @if (showPlacementHint()) {
+          <div class="placement-hint">
+            Кликните в нужной части страницы, чтобы добавить аннотацию
+          </div>
+        }
+
         @if (pendingPlacement()) {
           <app-add-new-annotation
             [position]="pendingPlacement()!"
