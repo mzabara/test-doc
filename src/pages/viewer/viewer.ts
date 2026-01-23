@@ -9,10 +9,11 @@ import { ZoomStore } from '@shared/store/zoom.store';
 import { PageComponent } from '@pages/page/page';
 import { NotFound } from '@shared/components/not-found/not-found';
 import { Loader } from '@shared/components/loader/loader';
+import { ToTop } from '@shared/components/to-top/to-top';
 
 @Component({
   selector: 'app-viewer',
-  imports: [PageComponent, NotFound, Loader],
+  imports: [PageComponent, NotFound, Loader, ToTop],
   templateUrl: 'viewer.html',
   styleUrl: './viewer.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
